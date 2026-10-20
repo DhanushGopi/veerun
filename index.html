@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Baloo+Thambi+2:wght@600;800&family=Bungee&family=IBM+Plex+Mono:wght@500;600&display=swap">
 
-<link rel="shortcut icon" href="./dglogowhite.svg" type="image/x-icon">
+<link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
 
 
 <!-- Google tag (gtag.js) -->
@@ -25,7 +25,7 @@
 
 <!-- Open Graph / Social Preview -->
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://dhanushgopi.github.io/codgame/" />
+<meta property="og:url" content="https://dhanushgopi.github.io/veerun/" />
 <meta property="og:title" content="Veeramani: COD Sambavam | A Cash-on-Delivery Chase" />
 <meta
   property="og:description"
@@ -33,10 +33,10 @@
 />
 <meta
   property="og:image"
-  content="https://dhanushgopi.github.io/codgame/ogimage.jpg"
+  content="https://dhanushgopi.github.io/veerun/ogimage.png"
 />
-<meta property="og:image:secure_url" content="https://dhanushgopi.github.io/codgame/ogimage.jpg" />
-<meta property="og:image:type" content="image/jpeg" />
+<meta property="og:image:secure_url" content="https://dhanushgopi.github.io/veerun/ogimage.png" />
+<meta property="og:image:type" content="image/png" />
 <meta property="og:image:width" content="600" />
 <meta property="og:image:height" content="315" />
 <meta property="og:image:alt" content="Veeramani escaping COD delivery trucks and a military tank" />
@@ -50,7 +50,7 @@
 />
 <meta
   name="twitter:image"
-  content="https://dhanushgopi.github.io/codgame/ogimage.jpg"
+  content="https://dhanushgopi.github.io/veerun/ogimage.png"
 />
 <meta name="twitter:image:alt" content="Veeramani COD Sambavam game preview" />
 
@@ -230,30 +230,8 @@ img { max-width: 100%; }
 
 .menu-inner { display: flex; flex-direction: column; align-items: center; gap: 14px; width: 100%; max-width: 420px; text-align: center; margin-top: 36px; margin-bottom: 20px; }
 .kicker { font-size: 11px; color: var(--marigold); margin: 0; }
-.logo { margin: 0; display: flex; flex-direction: column; align-items: center; }
-.logo .tamil { font-size: clamp(1.1rem, 5vw, 1.5rem); color: var(--cream); margin-bottom: 2px; text-shadow: 0 2px 0 rgba(0, 0, 0, 0.5); }
-.logo-a {
-  font-family: var(--f-display); font-weight: 400;
-  font-size: clamp(2.5rem, 14.5vw, 4.6rem); line-height: 0.95;
-  color: var(--marigold);
-  text-shadow: 0 4px 0 #a5481a, 0 9px 0 rgba(0, 0, 0, 0.35);
-}
-.logo-b {
-  position: relative;
-  display: inline-block; margin-top: 14px; padding: 4px 14px;
-  font-family: var(--f-display); font-weight: 400;
-  font-size: clamp(1.1rem, 6vw, 1.7rem);
-  background: var(--cream); color: var(--chili);
-  border: 3px solid var(--chili);
-  transform: rotate(-3deg);
-  box-shadow: 0 6px 0 rgba(0, 0, 0, 0.35), inset 0 0 0 2px #fff4dc, inset 0 0 0 4px var(--chili);
-}
-.logo-b::before, .logo-b::after {
-  content: ''; position: absolute; top: 50%; width: 6px; height: 6px; margin-top: -3px;
-  border-radius: 50%; background: var(--chili);
-}
-.logo-b::before { left: 5px; }
-.logo-b::after { right: 5px; }
+.logo { margin: 0; display: flex; flex-direction: column; align-items: center; max-width: 460px; }
+.logo img { width: 100%; height: auto; filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.4)); }
 
 .story { margin: 2px 0 4px; max-width: 32ch; font-size: 1rem; font-weight: 500; line-height: 1.3; color: var(--cream); text-wrap: balance; text-shadow: 0 1px 6px rgba(0, 0, 0, 0.6); }
 .row { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; width: 100%; }
@@ -454,8 +432,7 @@ img { max-width: 100%; }
   .screen { justify-content: flex-start; padding-top: calc(12px + env(safe-area-inset-top, 0px)); padding-bottom: calc(12px + env(safe-area-inset-bottom, 0px)); }
   .menu-inner { gap: 8px; margin: auto 0; }
   .story { display: none; }
-  .logo-a { font-size: clamp(2rem, 8vw, 2.8rem); }
-  .logo-b { margin-top: 8px; font-size: clamp(1rem, 4vw, 1.4rem); }
+  .logo { max-width: 200px; }
   .btn-primary { min-height: 48px; font-size: 1.15rem; }
   .card { gap: 6px; padding: 14px; }
   .card-title { font-size: 1.4rem; }
@@ -513,16 +490,14 @@ img { max-width: 100%; }
     <div class="menu-inner">
       <p class="kicker">A cash-on-delivery chase</p>
       <h1 id="menuTitle" class="logo">
-        <span class="tamil">வீரமணி</span>
-        <span class="logo-a">Veeramani</span>
-        <span class="logo-b">COD Sambavam</span>
+        <img class="gameLogo" src="./assets/gamelogo.png" alt="Veeramani: COD Sambavam Logo">
       </h1>
       <p class="story">Veeramani asked his followers for one box of sweets. They sent a TV, a fridge and a wet grinder. Pay on delivery. Run, machan.</p>
       <button id="btnPlay" class="btn btn-primary" type="button"><span>Play</span><small class="tamil">விளையாடு!</small></button>
       <div class="row">
         <button id="btnHow" class="btn btn-ghost" type="button">How to play</button>
         <button class="btn btn-ghost" type="button" data-sound aria-pressed="true">Sound: on</button>
-        <button class="btn btn-ghost" type="button" data-adult-sound aria-pressed="false">Adult SFX: off</button>
+        <button class="btn btn-ghost" type="button" data-adult-sound aria-pressed="false">OG Fans SFX: off</button>
       </div>
       <p class="best">Best score <b id="menuBest">0</b></p>
       <div class="credits-footer">
@@ -538,7 +513,7 @@ img { max-width: 100%; }
       <button id="btnPauseMenu" class="btn btn-ghost" type="button">Main menu</button>
       <div class="row" style="width:100%;">
         <button class="btn btn-ghost" type="button" data-sound aria-pressed="true" style="flex:1;">Sound: on</button>
-        <button class="btn btn-ghost" type="button" data-adult-sound aria-pressed="false" style="flex:1;">Adult SFX: off</button>
+        <button class="btn btn-ghost" type="button" data-adult-sound aria-pressed="false" style="flex:1;">OG Fans SFX: off</button>
       </div>
     </div>
   </section>
@@ -1920,7 +1895,7 @@ img { max-width: 100%; }
   };
   U.setAdultSound = function (adultSfx) {
     Array.prototype.forEach.call(document.querySelectorAll('[data-adult-sound]'), function (b) {
-      b.textContent = 'Adult SFX: ' + (adultSfx ? 'on' : 'off');
+      b.textContent = 'OG Fans SFX: ' + (adultSfx ? 'on' : 'off');
       b.setAttribute('aria-pressed', adultSfx ? 'true' : 'false');
     });
   };
